@@ -120,11 +120,12 @@ h1 {
   font-weight:100;
   font-size: 60px;
   line-height: 70px;
-  padding-top: 100px;
+  padding-top: 70px;
 
   @media (max-width:800px) {
      font-size: 40px;
   line-height: 50px;
+  padding-top: 50px;
   }
 }
 
@@ -162,6 +163,7 @@ h3 {
   border-spacing: 2px 4px;
   border: 1px solid var(--bs-header-bg);
   border-radius: 10px;
+  background-color: var(--bg-info);
   text-align: center;
   min-width: 450px;
   margin: 20px auto;
@@ -287,6 +289,7 @@ h3 {
 .carousel-indicators {
   position: static;
   margin-top: 30px;
+  
   justify-content: center;
 
   & .active {
@@ -300,7 +303,7 @@ h3 {
     width: 12px;
     height: 12px;
     
-    margin-right: 1px;
+    margin: 0 6px;
     border-radius: 50%;
     opacity: 0.5;
 

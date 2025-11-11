@@ -27,7 +27,7 @@
     --bs-btn-hover-bg: var(--bg-primary);
     --bs-btn-hover-color: var(--text-error);
     --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-success), black 25%);
-   --bs-btn-active-bg: var(--bg-warning-transparent);
+   --bs-btn-active-bg: var(--bg-warning);
     --bs-btn-active-color: var(--text-info);
     --bs-btn-active-border-color: var(--bs-success);
  
