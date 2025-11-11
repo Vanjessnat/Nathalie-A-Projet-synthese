@@ -1,0 +1,51 @@
+:root {
+    --bs-border-color: #032242;
+
+    --bs-primary: #e7e9ed;
+    --bs-primary-rgb: rgb(231, 233, 237);
+    --bg-primary: #e7e9ed;
+    --bs-body-bg: #e7e9ed;
+
+    --text-primary: #e7e9ed;
+
+    --bs-success: #9ea9b8;
+    --bs-success-rgb: rgb(158, 169, 184);
+
+    --bs-secondary: #032242;
+    --bs-secondary-rgb: rgb(3, 34, 66);
+    --text-secondary: #032242;
+    --text-secondary-rgb: rgb(3, 34, 66);
+    --bg-secondary: #032242;
+    --bg-secondary-rgb: rgb(3, 34, 66);
+
+    --bs-navbar-color: #032242;
+    --bs-navbar-color-rgb: rgb(3, 34, 66);
+    --bs-navbar-hover-color: #de1e1b;
+    --bs-navbar-hover-color-rgb: rgb(222, 30, 27);
+    --bs-navbar-active-color: #de1e1b;
+    --bs-navbar-active-color-rgb: rgb(222, 30, 27);    
+
+    --bg-info: #0323427a;
+    --bg-info-rgb: rgb(3, 35, 66, 0.48);
+
+    --bs-heading-color: #032242;
+
+    --bs-body-bg: #E7E9ED;
+    --bs-body-bg-rgb: 231, 233, 237;
+    --bs-header-bg: #032242;
+    --bs-section-bg: #0323429a;
+
+    --text-primary: #e7e9ed;
+    --text-secondary: #032242;
+    --text-info: #282828;
+    --text-success: #9ea9b8;
+    --text-warning: #fcaa13;
+    --bg-warning: #fcaa13;
+    --bg-warning-rgb: rgb(252, 170, 19);
+
+    --text-error: #de1e1b;
+    --bs-border-color-error: #de1e1b;
+
+    --bs-font-sans-serif: "Inter", sans-serif;
+    --bs-text: "Lalezar", Helvetica, sans-serif;
+}

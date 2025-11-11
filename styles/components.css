@@ -1,0 +1,56 @@
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-border-color-error);
+    --bs-btn-color: var(--text-error);
+
+    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary), black 50%);
+    --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-primary), black 25%);
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+
+    width: 400px;
+    height: 40px;
+}
+
+.btn-outline-primary {
+    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary), black 25%);
+}
+
+.btn-success {
+    --bs-btn-bg: var(--bs-secondary);
+    --bs-btn-border-color: var(--bs-success);
+    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary), black 20%);
+    --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-success), black 25%);
+    --bs-btn-active-bg: var(--bs-success);
+    --bs-btn-active-border-color: var(--bs-success);
+}
+
+.btn-outline-success {
+    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary), rgb(255, 255, 255) 25%);
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(1);
+    background-color: var(--text-info);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.navbar-nav {
+    --bs-nav-link-padding-x: 10px;
+    --bs-nav-link-padding-y: 10px;
+    --bs-nav-link-margin-x: 0px;
+    --bs-nav-link-margin-y: 0px;
+    --bs-nav-link-font-size: 1.5rem;
+    --bs-nav-link-font-weight: 300;
+    --bs-nav-link-color: var(--bs-navbar-color-rgb);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color-rgb);
+    --bs-nav-link-active-color: var(--bs-navbar-active-color-rgb);
+    font-family: "Lalezar", sans-serif;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--bs-navbar-active-color-rgb);
+}

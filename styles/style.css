@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Lavishly+Yours&display=swap');
+
+:root {
+
+  --bs-body-bg: #E7E9ED;
+  --bs-body-bg-rgb: 231, 233, 237;
+  --bs-header-bg: #032242;
+  --text-primary: #e7e9ed;
+  --text-info: #282828;
+  --text-error: #de1e1b;
+
+  --bs-font-sans-serif: "Inter", sans-serif;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Polices */
+.lalezar-regular {
+  font-family: "Lalezar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+
+  &:focus {
+    background-color: var(--text-error);
+    clip-path: none;
+    color: var(--text-primary);
+    display: block;
+    font-size: var(--bs-font-sans-serif);
+    left: 5px;
+    height: auto;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    top: 5px;
+    text-decoration: none;
+    width: auto;
+    z-index: 100000;
+  }
+}
+
+
+/* Sections et Footer */
+.hero {
+  background-image: linear-gradient(to top, rgba(32, 56, 187, 0.027), rgb(231, 233, 237)), url("../images/corvette.jpg");
+  background-size: auto, cover;
+  background-position: top, top;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 20px 200px;
+  position: relative;
+}
+
+.section-1 {
+  background-image: url("../images/bg-light-pattern.gif");
+  background-size: auto, cover;
+  background-position: top, top;
+}
+
+.section-2 {
+  background: var(--bg-info);
+  background-image: linear-gradient(to top, rgba(32, 56, 187, 0.027), rgb(231, 233, 237)), url("/images/bg.jpg");
+  background-size: auto, cover;
+  background-position: top, top;
+}
+
+.bg-section-footer {
+  background-color: var(--bs-section-bg);
+  margin: 0;
+  padding: 0;
+}
+
+/* Titre */
+h1 {
+  font-family: "Lalezar", sans-serif;
+  text-align: center;
+  font-weight:100;
+  font-size: 60px;
+  line-height: 70px;
+  padding-top: 100px;
+
+}
+
+h2 {
+  font-family: "Lalezar", sans-serif;
+  text-align: center;
+  font-weight:10;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0;
+  padding: 10px;
+}
+
+h3 {
+  font-family: "Lalezar", sans-serif;
+  text-align: center;
+  font-weight:100;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+/* Tableau Horaire */
+.horaire {
+  border-collapse: separate;
+  border-spacing: 2px 4px;
+  border: 1px solid var(--bs-header-bg);
+  border-radius: 10px;
+  text-align: center;
+  min-width: 450px;
+  margin: 20px auto;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+  & td {
+    padding: 6px 12px;
+    border: 1px solid var(--bs-header-bg);
+    background-color: var(--bs-body-bg);
+    color: var(--text-info);
+  }
+
+  & td:first-child {
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+
+
+/* Cartes pivotantes*/
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 50px auto;
+  
+
+  &.flip-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  color: rgb(255, 255, 255);
+  border: 1px solid var(--text-info);
+
+  & p {
+    position: absolute;
+    background-color: #3637387a;
+    top: 95%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+}
+
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #e63946;
+  color: white;
+  transform: rotateY(180deg);
+  border: 1px solid var(--text-info);
+
+  & p {
+    position: absolute;
+    background-color: #3637387c;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+}
+
+
+/* Cartes services */
+
+.card {
+  width: 24rem;
+  height: 20rem;
+
+  @media (max-width:800px) {
+    width: 26rem;
+    height: 22rem;
+  }
+}
+
+/* Carousel personnalisé */
+
+.carousel-custom {
+  max-width: 480px;
+  min-width: 400px;
+}
+
+.carousel-image {
+  border: 1px solid var(--text-info);
+}
+
+.carousel-indicators {
+  position: static;
+  margin-top: 30px;
+  justify-content: center;
+
+  & .active {
+    background-color: var(--text-error);
+    opacity: 1;
+  }
+
+  & [data-bs-target] {
+    border: 1px solid var(--text-info);
+    background-color: var(--bs-header-bg);
+    width: 12px;
+    height: 12px;
+    
+    margin-right: 10px;
+    border-radius: 50%;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: var(--text-error);
+      opacity: 1;
+    }
+
+    &.active {
+      background-color: var(--text-error);
+      opacity: 1;
+    }
+  }
+}
+
