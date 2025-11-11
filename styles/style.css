@@ -135,14 +135,14 @@ h3 {
   margin: 20px auto;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 
-  & td {
+  & td, th {
     padding: 6px 12px;
     border: 1px solid var(--bs-header-bg);
     background-color: var(--bs-body-bg);
     color: var(--text-info);
   }
 
-  & td:first-child {
+  & th:first-child {
     text-align: left;
     padding-left: 10px;
   }

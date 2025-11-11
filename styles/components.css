@@ -1,28 +1,40 @@
 .btn-primary {
-    --bs-btn-bg: var(--bs-primary);
-    --bs-btn-border-color: var(--bs-border-color-error);
-    --bs-btn-color: var(--text-error);
-
-    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary), black 50%);
-    --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-primary), black 25%);
-    --bs-btn-active-bg: var(--bs-primary);
-    --bs-btn-active-border-color: var(--bs-primary);
-
+    --bs-btn-bg: var(--bs-secondary);
+    --bs-btn-border-color: var(--text-warning);
+    --bs-btn-color: var(--btn-text-color);
+    --bs-btn-hover-color: var(--btn-text-color);
+    --bs-btn-hover-bg: var(--bg-primary);
+    --bs-btn-hover-color: var(--text-error);
+    --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-success), black 25%);
+    --bs-btn-active-bg: var(--bs-warning);
+    --bs-btn-active-color: var(--text-info);
+    --bs-btn-active-border-color: var(--bs-success);
+   margin-top: 40px;
     width: 400px;
-    height: 40px;
+    height: 44px;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
-
 .btn-outline-primary {
     --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary), black 25%);
 }
 
-.btn-success {
-    --bs-btn-bg: var(--bs-secondary);
-    --bs-btn-border-color: var(--bs-success);
-    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary), black 20%);
+
+.btn-success  {
+    --bs-btn-bg: var(--bs-border-color-error);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-color: var(--btn-text-color);
+    --bs-btn-hover-bg: var(--bg-primary);
+    --bs-btn-hover-color: var(--text-error);
     --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-success), black 25%);
-    --bs-btn-active-bg: var(--bs-success);
+   --bs-btn-active-bg: var(--bs-warning);
+    --bs-btn-active-color: var(--text-info);
     --bs-btn-active-border-color: var(--bs-success);
+ 
+    width: 400px;
+    height: 44px;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 .btn-outline-success {
