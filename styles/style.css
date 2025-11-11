@@ -63,10 +63,10 @@
 
 /* Sections et Footer */
 .hero {
-  background-image: linear-gradient(to top, rgba(32, 56, 187, 0.027), rgb(231, 233, 237)), url("../images/corvette.jpg");
+  background-image: linear-gradient(to top, rgba(32, 56, 187, 0.027), rgb(231, 233, 237)), url("../images/slice-vehicule-porsche.jpg");
   background-size: auto, cover;
-  background-position: top, top;
-  height: 500px;
+  background-position: bottom, center;
+  height: 400px;
   margin: 0;
   padding: 0;
 }
@@ -84,13 +84,31 @@
 
 .section-2 {
   background: var(--bg-info);
-  background-image: linear-gradient(to top, rgba(32, 56, 187, 0.027), rgb(231, 233, 237)), url("/images/bg.jpg");
+  background-image: linear-gradient(to top, rgba(32, 55, 187, 0.075), rgba(231, 233, 237, 0.918)), url("../images/service-polissage.jpg");
+  background-blend-mode: lighten;
   background-size: auto, cover;
-  background-position: top, top;
+  background-position: center,center
+}
+
+.section-3 {
+  
+  background: var(--bg-info);
+  background-image: linear-gradient(to top, rgba(32, 55, 187, 0.075), rgba(231, 233, 237, 0.849)), url("/images/bg.jpg");
+  background-blend-mode: lighten;
+  background-size: auto, cover;
+  background-position: center,center
+}
+.section-header
+{
+  background: var(--bg-info);
+  background-image: linear-gradient(to top, rgba(231, 233, 237, 0.986), rgba(32, 55, 187, 0.075)), url("/images/bg.jpg");
+  background-blend-mode: lighten;
+  background-size: auto, cover;
+  background-position: center,center
 }
 
 .bg-section-footer {
-  background-color: var(--bs-section-bg);
+  background-color: var(--bg-warning-transparent);
   margin: 0;
   padding: 0;
 }
@@ -104,6 +122,10 @@ h1 {
   line-height: 70px;
   padding-top: 100px;
 
+  @media (max-width:800px) {
+     font-size: 40px;
+  line-height: 50px;
+  }
 }
 
 h2 {
@@ -114,6 +136,11 @@ h2 {
   line-height: 50px;
   margin: 0;
   padding: 10px;
+
+  @media (max-width:800px) {
+     font-size: 30px;
+  line-height: 40px;
+  }
 }
 
 h3 {
@@ -122,6 +149,11 @@ h3 {
   font-weight:100;
   font-size: 30px;
   line-height: 40px;
+
+   @media (max-width:800px) {
+     font-size: 24px;
+  line-height: 34px;
+  }
 }
 
 /* Tableau Horaire */
@@ -198,7 +230,6 @@ h3 {
     background-color: #3637387a;
     top: 95%;
     left: 50%;
-
     transform: translate(-50%, -50%);
     font-size: 1.3rem;
     font-weight: 600;
@@ -269,7 +300,7 @@ h3 {
     width: 12px;
     height: 12px;
     
-    margin-right: 10px;
+    margin-right: 1px;
     border-radius: 50%;
     opacity: 0.5;
 
