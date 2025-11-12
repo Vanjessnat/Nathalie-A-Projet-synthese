@@ -258,13 +258,19 @@ h3 {
 /* Cartes services */
 
 .card {
-  width: 22rem;
-  height: 18rem;
+  width: 26rem;
+  height: 22rem;
 
-  @media (max-width:800px) {
-    width: 24rem;
-    height: 20rem;
+  @media (max-width:1280px) {
+    width: 27rem;
+    height: 23rem;
+
+    @media (max-width:800px) {
+    width: 28rem;
+    height: 24rem;
   }
+  }
+  
 }
 
 /* Carousel personnalisé */
