@@ -161,6 +161,15 @@ h3 {
   }
 }
 
+a {
+    
+    text-decoration: none;
+
+    &:hover {
+        color: var(--bs-link-hover-color);
+        text-decoration:none;
+    }
+}
 /* Tableau Horaire */
 .horaire {
   border-collapse: separate;
@@ -300,7 +309,7 @@ h3 {
 .carousel-custom {
   max-width: 500px;
   min-width: 350px;
-  
+  justify-content: center;
 }
 
 .carousel-image {

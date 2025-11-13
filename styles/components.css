@@ -1,12 +1,4 @@
-a {
-    
-    text-decoration: none;
 
-    &:hover {
-        color: var(--bs-link-hover-color);
-        text-decoration:none;
-    }
-}
 
 .btn-primary {
     --bs-btn-bg: var(--bs-secondary);
