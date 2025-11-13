@@ -19,6 +19,16 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bs-body-bg);
+  background-image: url("../images/bg-light-pattern.gif");
+  background-size: auto, cover;
+  background-position: top, top;
+
+}
+
 /* Polices */
 .lalezar-regular {
   font-family: "Lalezar", sans-serif;
@@ -70,7 +80,7 @@
   margin: 0;
   padding: 0;
 }
-
+/*
 .section {
   padding: 20px 200px;
   position: relative;
@@ -81,7 +91,10 @@
   background-size: auto, cover;
   background-position: top, top;
 }
-
+*/
+.section-header {
+  background: linear-gradient(to bottom, #032342d2, #E7E9ED);
+}
 .section-2 {
   background: var(--bg-info);
   background-image: linear-gradient(to top, rgba(32, 55, 187, 0.075), rgba(231, 233, 237, 0.918)), url("../images/service-polissage.jpg");
@@ -94,11 +107,7 @@
   background: linear-gradient(to top, #032342d2, #E7E9ED);
 }
 
-.section-header {
-  background: linear-gradient(to bottom, #032342d2, #E7E9ED);
-}
-
-.bg-section-footer {
+.section-footer {
   background-color: var(--bg-warning-transparent);
   margin: 0;
   padding: 0;
@@ -256,7 +265,15 @@ h3 {
 
 
 /* Cartes services */
+.card {
+    width: 18rem;
 
+    @media (max-width:780px) {
+        width: 26rem;
+    }
+
+}
+/*
 .card {
   width: 26rem;
   height: 22rem;
@@ -272,7 +289,7 @@ h3 {
   }
   
 }
-
+*/
 /* Carousel personnalisé */
 
 .carousel-custom {
