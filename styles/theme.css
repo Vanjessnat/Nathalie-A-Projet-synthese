@@ -35,6 +35,11 @@
     --bs-header-bg: #032242;
     --bs-section-bg: #0323429a;
 
+    --bs-link-color: #282828;
+    --bs-link-color-rgb: rgb(40, 40, 40);
+    --bs-link-hover-color: #de1e1b;
+    --bs-link-hover-color-rgb: rgb(222, 30, 27);
+
     --text-primary: #e7e9ed;
     --text-secondary: #032242;
     --text-info: #282828;
