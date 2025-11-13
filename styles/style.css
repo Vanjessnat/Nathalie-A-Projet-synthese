@@ -80,18 +80,16 @@ body {
   margin: 0;
   padding: 0;
 }
-/*
-.section {
-  padding: 20px 200px;
-  position: relative;
-}
+
 
 .section-1 {
-  background-image: url("../images/bg-light-pattern.gif");
+  background: var(--bg-info);
+  background-image: linear-gradient(to top, rgba(32, 55, 187, 0.075), rgba(231, 233, 237, 0.918)), url("../images/service-polir-vehicule-rouge.jpg");
+  background-blend-mode: lighten;
   background-size: auto, cover;
   background-position: top, top;
 }
-*/
+
 .section-header {
   background: linear-gradient(to bottom, #032342d2, #E7E9ED);
 }
@@ -287,23 +285,16 @@ a {
     }
 
 }
-/*
-.card {
-  width: 26rem;
-  height: 22rem;
-
-  @media (max-width:1280px) {
-    width: 27rem;
-    height: 23rem;
+.card-services {
+    width: 30rem;
+    border-radius: 10px;
+    border-style: double;
 
     @media (max-width:800px) {
-    width: 28rem;
-    height: 24rem;
-  }
-  }
-  
+        width: 26rem;
+    }
 }
-*/
+  
 /* Carousel personnalisé */
 
 .carousel-custom {

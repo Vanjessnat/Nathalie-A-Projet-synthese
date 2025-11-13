@@ -17,24 +17,24 @@
     <link rel="icon" type="images/svg+xml" href="images/favicon.svg" />
 </head>
 
-<body class="mx-0 px-0">
+<body>
     <a class="screen-reader-text" href="#main-content">Aller au contenu principal</a>
-    <header class="mx-0 px-0 header-fixed">
+    <header class="mx-0 px-0 section-header">
         <!-- Navigation secondaire -->
-        <div class="topbar text-dark py-2">
+        <div class="topbar py-0 pb-0 mb-0 text-light">
             <div class="container d-flex justify-content-end align-items-center gap-4">
-                <a href="tel:4501234567" class="text-dark text-decoration-none d-flex align-items-center">
-                    <i class="bi bi-telephone-fill me-1 fs-4"></i>
+                <a href="tel:4501234567" class=" text-decoration-none d-flex align-items-center" aria-label="Téléphone">
+                    <i class="bi bi-telephone-fill me-1 text-light fs-6 "></i>
                 </a>
-                <a href="https://www.facebook.com/carrosserieJacquesgenereux" target="_blank" class="text-dark fs-4">
-                    <i class="bi bi-facebook"></i>
+                <a href="https://www.facebook.com/carrosserieJacquesgenereux" target="_blank" class="text-dark fs-4"
+                    aria-label="Facebook">
+                    <i class="bi bi-facebook  text-light fs-6 "></i>
                 </a>
-                <a href="https://www.youtube.com/@2Street" target="_blank" class="text-dark fs-3">
-                    <i class="bi bi-youtube"></i>
+                <a href="https://www.youtube.com/@2Street" target="_blank" class="text-dark fs-3" aria-label="YouTube">
+                    <i class="bi bi-youtube text-light  fs-5 "></i>
                 </a>
             </div>
         </div>
-
         <!-- Navigation principale -->
         <nav class="navbar navbar-expand-lg border-body border-bg main-nav" data-bs-theme="fw-light">
             <div class="container">
@@ -42,19 +42,16 @@
                     <img src="images/logo.png" style="width: 150px;" alt="Les carrosseries Jacques Généreux inc."
                         class="d-inline-block align-text-center me-3">
                 </a>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-
                         <!-- Services avec sous-menu -->
-                        <li class="nav-item dropdown ">
-                            <a class="active nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown">
+                            <a class="active nav-link dropdown-toggle" href="services.html" id="servicesDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
@@ -62,140 +59,203 @@
                                 <li><a class="dropdown-item" href="realisations.html">Réalisations</a></li>
                             </ul>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="apropos.html">À&nbsp;propos</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
+
         </nav>
     </header>
 
+
     <main class="container-fluid mx-0 px-0" id="main-content">
-      
 
-    <!--   Cartes nos services  -->
 
-    <section
-        class="container-fluid section section-1 ">
+        <!--   Nos services  -->
 
-        <h1 class="text-center pt-0 mt-5 mb-5">Nos services</h1>
+        <section class="container  pb-5">
 
-        <div class="d-flex justify-content-center gap-4 flex-wrap">
-            <!--   <div class="d-flex justify-content-center flex-wrap gap-4 ">  -->
-            <div class="card slide-in-left">
-                <img src="images/service-estime-dommages.jpg" class="card-img-top" alt="Mes services">
-                <div class="card-body">
-                    <p class="fs-4">Réclamation assurance</p>
+            <h1 class="text-center pt-0 mt-5 mb-5">Nos services</h1>
+            <p class="text-center fs-4 pb-5"> Explorez nos services et voyez comment nous pouvons vous remettre sur la
+                route en toute sécurité et efficacement.</p>
+         
+                <div class="container">
+                    <div class="row align-items-center mb-5">
+                        <div
+                            class=" col-12 order-1 col-md-12 order-md-1 col-lg-6 order-lg-2 text-center text-md-center text-lg-start mb-3">
+                            <h2 class=" fs-2 text-md-center text-lg-start">Réclamations assurances</h2>
+                            <p class="mb-0 ">Notre service vous aide à gérer les complications liées aux accidents de
+                                voiture. Grâce à un processus de réclamation simplifié, un engagement de qualité et une
+                                garantie réseau, nous contrôlons votre tranquillité d'esprit. </p>
+                        </div>
+                        <div id="estimation"
+                            class="col-12 order-2 col-md-12 order-md-1 col-lg-6 text-center text-md-center text-lg-start">
+                            <img class="card-services" src="images/service-estime-dommages.jpg"
+                                alt="Processus de réclamation simplifié">
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center mb-5">
+                        <div id="peinture"
+                            class="col-12 order-2 col-md-12 order-md-1 col-lg-6 order-lg-1 text-center text-md-center text-lg-start mb-3">
+                            <h2 class=" fs-2 text-md-center text-lg-start">Réparation de carrosserie</h2>
+                            <p class="mb-0">Nous inspectons les dommages causés par un accidents ou par la rouille, et
+                                fournissons une estimation des coûts de réparation. Nous procédons ensuite à la commande
+                                des pièces à remplacer, au remplacement et à la réparation de la carrosserie, ainsi qu'à
+                                la peinture et à l'inspection de la qualité avant la livraison.</p>
+                        </div>
+                        <div
+                            class="col-12 order-2 col-md-12 order-md-1 col-lg-6 text-center text-md-center text-lg-start">
+                            <img class="card-services" src="images/service-chambre-peinture.jpg"
+                                alt="Nous assurons la réparation de la carrosserie de votre véhicule">
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div id="polissage"
+                            class=" col-12 order-1 col-md-12 order-md-1 col-lg-6 order-lg-2 text-center text-md-center text-lg-start mb-3">
+                            <h2 class=" fs-2 text-md-center text-lg-start">Réparation des rayures </h2>
+                            <p class="mb-0 ">Nous assurons de correspondance des couleurs précise pour garantir une
+                                intégration harmonieuse de la peinture réparée avec celle d'origine. Le processus de
+                                restauration comprend le polissage, l'utilisation d'un apprêt premium, et la retouche
+                                avec une peinture assortie et un vernis transparent, assurant une réparation discrète.
+                            </p>
+                        </div>
+                        <div
+                            class="col-12 order-2 col-md-12 order-md-1 col-lg-6 text-center text-md-center text-lg-start">
+                            <img class="card-services" src="images/service-polissage.jpg"
+                                alt="Réparation des rayures par polissage et retouche de peinture">
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center mb-5">
+                        <div
+                            class="col-12 order-2 col-md-12 order-md-1 col-lg-6 order-lg-1 text-center text-md-center text-lg-start mb-3">
+                            <h2 class=" fs-2 text-md-center text-lg-start">Redressement de chassis</h2>
+                            <p class="mb-0">Spécialisés dans le redressement de châssis de véhicule accidenté,
+                                rétablissant leur intégrité structurelle pour assurer une conduite sûre et agréable.
+                                Cependant, dans certains cas, il peut être nécessaire de le remplacer.</p>
+                        </div>
+                        <div
+                            class="col-12 order-2 col-md-12 order-md-1 col-lg-6 text-center text-md-center text-lg-start">
+                            <img class="card-services" src="images/services-redressement-chassis.jpg"
+                                alt="Redressement de chassis de véhicule lourdement accidenté">
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div
+                            class=" col-12 order-1 col-md-12 order-md-1 col-lg-6 order-lg-2 text-center text-md-center text-lg-start mb-2">
+                            <h2 class=" fs-2 text-md-center text-lg-start">&nbsp;&nbsp;&nbsp;&nbsp;Et bien plus encore</h2>
+                            <div class="mb-0 ">
+                                <ul>
+                                    <li class="list-unstyled">Le remplacement de vitres (pare-brise). <i class="bi bi-check2-circle"></i></li>
+                                    <li class="list-unstyled">La réparation du système de climatisation. <i class="bi bi-check2-circle"></i></li>
+                                    <li class="list-unstyled">Le changement et l'installation de pneus.<i class="bi bi-check2-circle"></i></li>
+                                    <li class="list-unstyled">L'alignement et l'équilibrage des roues.<i class="bi bi-check2-circle"></i></li>
+                                    <li class="list-unstyled">Le prêt d’un véhicule de courtoisie.<i class="bi bi-check2-circle"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 order-2 col-md-12 order-md-1 col-lg-6 text-center text-md-center text-lg-start">
+                            <img class="card-services" src="images/service-remplacement-pare-brise.jpg"
+                                alt="Remplacement de vitres et pare-brise">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-5 mb-5">
+                <a href="realisations.html" class="btn btn-primary">Voir toutes les réalisations</a>
+            </div>
+            </section>
+
+        <!--   Section Témoignages -->
+
+        <section
+            class="container-fluid section section-1 d-flex flex-column align-items-center justify-content-center text-center pt-5 pb-5">
+
+            <h2 class="text-center pb-5">Témoignages</h2>
+
+
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                <div class="card slide-in-right text-dark" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text">"Service exceptionnel! Mon véhicule a été réparé rapidement et le travail
+                            est impeccable. Je recommande vivement Les carrosseries Jacques Généreux inc. pour tous vos
+                            besoins en carrosserie."</p>
+                        <h5 class="card-title mt-3">- Marie L.</h5>
+                    </div>
                 </div>
             </div>
-            <div class="card slide-in-left">
-                <img src="images/service-peintre-vehicule.jpg" class="card-img-top" alt="Mes services">
-                <div class="card-body">
-                    <p class="fs-4">Réparation carrosserie</p>
-
-                </div>
-            </div>
-            <div class="card slide-in-left">
-                <img src="images/service-polir-vehicule.jpg" class="card-img-top" alt="Mes services">
-                <div class="card-body">
-                    <p class="fs-4">Réparation des rayures</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-center mt-5 mb-5">
-            <a href="https://tonlien.com" class="btn btn-primary">Voir tous les services</a>
-        </div>
-    </section>
-
-    <!--   Section Témoignages -->
-
-    <section
-        class="container-fluid section section-2 d-flex flex-column align-items-center justify-content-center text-center text-dark pb-5">
-
-        <h2 class="text-center pb-5">Témoignages</h2>
-
-
-        <div class="d-flex justify-content-center gap-4 flex-wrap">
-            <div class="card slide-in-right text-dark" style="width: 18rem;">
-                <div class="card-body">
-                    <p class="card-text">"Service exceptionnel! Mon véhicule a été réparé rapidement et le travail
-                        est impeccable. Je recommande vivement Les carrosseries Jacques Généreux inc. pour tous vos
-                        besoins en carrosserie."</p>
-                    <h5 class="card-title mt-3">- Marie L.</h5>
-                </div>  
-                </div>  
-                </div>      
-    </section>
+        </section>
 
     </main>
     <!-- Pied de page -->
 
-    <footer class="bg-section-footer py-5 mt-0">
+     <footer class="container-fluid section-footer py-5 mt-0">
         <div class="container">
             <div class="row gy-4 align-items-center">
                 <!-- Colonne 1 : Coordonnées -->
                 <div class="col-md-4 text-center text-md-start">
                     <h3 class="text-md-start mb-2">Coordonnées</h3>
-                    <p class="mb-3 text-black"><i class="bi bi-geo-alt-fill me-1 fs-4"></i> 24, rue Hubert Joliette J6E
-                        6R5</p>
-                    <p class="mb-3 text-black"><i class="bi bi-telephone-fill me-1 fs-4"></i> <a href="tel:+14507566363"
-                            class="text-black text-decoration-none">450
+                    <p class="mb-3 fs-lg-5 fs-md-5 "><i
+                            class="bi bi-geo-alt-fill me-1 fs-4 fs-md-5"></i>24&nbsp;rue&nbsp;Hubert&nbsp;Joliette&nbsp;J6E&nbsp;6R5
+                    </p>
+                    <p class="mb-3 text-black"><i class="bi bi-telephone-fill me-1 fs-4"></i><a href="tel:+14507566363"
+                            class="" aria-label="14507566363">450
                             756-6363</a></p>
-                    <p class="mb-3 text-black"><i class="bi bi-envelope-at-fill me-1 fs-4"></i> <a
-                            href="mailto:carrosseriesjg@outlook.com"
-                            class="text-black text-decoration-none">carrosseriesjg@outlook.com</a></p>
+                    <p class="mb-3 fs-lg-5 fs-md-5 "><i class="bi bi-envelope-at-fill me-1 fs-4"></i><a
+                            href="mailto:carrosseriesjg@outlook.com" class=""
+                            aria-label="carrosseriesjg@outlook.com">carrosseriesjg@outlook.com</a></p>
                 </div>
-
                 <!-- Colonne 2 : Liens de navigation -->
                 <div class="col-md-4 text-center">
-                    <h3 class="mb-2">Navigation</h3>
+                    <h3>Liens</h3>
                     <ul class="list-unstyled mb-2">
-                        <li class="pb-1"><a href="services.html" class="text-black text-decoration-none ">Services</a>
+                        <li class="pb-3 pb-md-2"><a href="services.html"
+                                class="">Services</a>
                         </li>
-                        <li class="pb-1"><a href="apropos.html"
-                                class="text-black text-decoration-none  pb-2">À&nbsp;propos</a></li>
-                        <li class="pb-1"><a href="contact.html" class="text-black text-decoration-none mb-2">Contact</a>
+                        <li class="pb-3 pb-md-2"><a href="apropos.html"
+                                class=" pb-2">À&nbsp;propos</a></li>
+                        <li class="pb-3 pb-md-2"><a href="contact.html"
+                                class="  mb-2">Contact</a>
                         </li>
-                        <li class="pb-1"><a href="realisations.html"
-                                class="text-black text-decoration-none mb-2">Réalisations</a></li>
-                        <li class="pb-1"><a href="contact.html" class="text-black text-decoration-none">Carrière</a>
+                        <li class="pb-3 pb-md-2"><a href="realisations.html"
+                                class="  mb-2">Réalisations</a></li>
+                        <li class="pb-3 pb-md-2"><a href="contact.html"
+                                class=" ">Carrière</a>
                         </li>
                     </ul>
                 </div>
                 <!-- Colonne 3 : Logo + texte -->
                 <div class="col-md-4 text-center text-md-end">
-                    <a href="index.html" class="text-dark fs-3"><img src="images/logo.png"
+                    <a href="index.html" class=" fs-3"><img src="images/logo.png"
                             alt="Les carrosseries Jacques Généreux inc." style="width: 150px;" class="mb-3"></a>
                     <p class="text-center text-md-end text-xl-end"> <a
                             href="https://www.facebook.com/carrosserieJacquesgenereux" target="_blank"
-                            class="text-dark fs-4">
-                            <i class="bi bi-facebook me-1 fs-4 text-black px-4 px-md-5"></i></a>
-                        <a href="https://www.youtube.com/@2Street" target="_blank" class="text-dark fs-3">
-                            <i class="bi bi-youtube me-1 fs-4 text-black px-3 px-md-3"></i></a>
+                            class=" fs-4" aria-label="Facebook">
+                            <i class="bi bi-facebook me-1 fs-4  px-4 px-md-5"></i></a>
+                        <a href="https://www.youtube.com/@2Street" target="_blank" class=" fs-3"
+                            aria-label="YouTube">
+                            <i class="bi bi-youtube me-1 fs-4  px-3 px-md-3"></i></a>
                     </p>
                 </div>
             </div>
-
             <!-- Ligne de séparation -->
             <hr class="border-secondary my-4">
-
             <!-- Bas de page -->
             <div class="text-center small text-black">
-                © 2025 Les carrosseries Jacques Généreux inc.
+                © 2025 Les carrosseries Jacques Généreux&nbsp;inc.
             </div>
-        </div>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+     
 </body>
+
 </html>
