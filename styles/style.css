@@ -242,10 +242,11 @@ a {
 
   & p {
     position: absolute;
-    background-color: #3637387a;
+    background-color: #3637389f;
     border-radius: 10px;
     top: 95%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
     font-size: 1.3rem;
     font-weight: 300;
@@ -267,10 +268,11 @@ a {
 
   & p {
     position: absolute;
-    background-color: #3637387c;
+    background-color: #3637389f;
     border-radius: 10px;
     top: 95%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
     font-size: 1.3rem;
     font-weight: 300;
