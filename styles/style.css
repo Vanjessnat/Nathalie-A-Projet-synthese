@@ -284,16 +284,16 @@ a {
 .card {
   width: 18rem;
 
-  @media (max-width:780px) {
-    width: 26rem;
+  @media (max-width:800px) {
+    width: 24rem;
   }
 }
 
 .card-temoignage {
-  width: 24rem;
+  width: 26rem;
 
-  @media (max-width:350px) {
-    width: 26rem;
+  @media (max-width:800px) {
+    width: 24rem;
   }
 }
 
@@ -303,7 +303,7 @@ a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
 
   @media (max-width:800px) {
-    width: 26rem;
+    width: 24rem;
   }
 }
 
