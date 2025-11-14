@@ -2,7 +2,7 @@
 
 .btn-primary {
     --bs-btn-bg: var(--bs-secondary);
-    --bs-btn-border-color: var(--text-warning);
+    --bs-btn-border-color: var(--bs-primary);
     --bs-btn-color: var(--btn-text-color);
     --bs-btn-hover-color: var(--btn-text-color);
     --bs-btn-hover-bg: var(--bg-primary);
@@ -12,15 +12,12 @@
     --bs-btn-active-color: var(--text-info);
      --bs-btn-active-border-color: var(--text-info);
     border-radius: 10px;
-    border-width: 2px;
+    border-width: 1px;
     margin-top: 40px;
-    width: 400px;
-    height: 46px;
+    /*width: 400px;
+    height: 46px;*/
     font-weight: 400;
     font-size: 1.2rem;
-}
-.btn-outline-primary {
-    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary), black 25%);
 }
 
 
@@ -36,15 +33,11 @@
     --bs-btn-active-border-color: var(--text-info);
     
     border-radius: 10px;
-    border-width: 2px;
-    width: 400px;
-    height: 44px;
+    border-width: 1px;
+    /*width: 400px;
+    height: 44px;*/
     font-weight: 400;
     font-size: 1.2rem;
-}
-
-.btn-outline-success {
-    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary), rgb(255, 255, 255) 25%);
 }
 
 
@@ -71,8 +64,6 @@
 }
 
 
-
-
 .navbar-nav .nav-item  .nav-link.active, .navbar-nav .nav-link.show {
     color: var(--bs-navbar-active-color-rgb);
     line-height: 1.2;
@@ -81,3 +72,5 @@
 .nav-item {
 margin-left: 3rem;
 }
+
+

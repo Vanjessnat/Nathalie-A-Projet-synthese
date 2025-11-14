@@ -332,7 +332,7 @@ a {
 
 .carousel-custom {
   max-width: 500px;
-  min-width: 350px;
+  /*min-width: 350px;*/
   justify-content: center;
 }
 
