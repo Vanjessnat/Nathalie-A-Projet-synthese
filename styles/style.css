@@ -236,14 +236,13 @@ a {
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #f8f9fa;
+  background-color: var(--bs-header-bg);
   color: rgb(255, 255, 255);
   border: 1px solid var(--text-info);
 
   & p {
     position: absolute;
-    background-color: #3637389f;
-    border-radius: 10px;
+    background-color: var(--bs-header-bg);
     top: 95%;
     left: 50%;
     width: 100%;
@@ -261,15 +260,14 @@ a {
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #e63946;
+  background-color: var(--text-error);
   color: white;
   transform: rotateY(180deg);
   border: 1px solid var(--text-info);
 
   & p {
     position: absolute;
-    background-color: #3637389f;
-    border-radius: 10px;
+    background-color:var(--bs-header-bg);
     top: 95%;
     left: 50%;
     width: 100%;
@@ -295,6 +293,9 @@ a {
   @media (max-width:800px) {
     width: 24rem;
   }
+  @media (max-width:400px) {
+    width: 18rem;
+  }
 }
 
 .card-services {
@@ -305,6 +306,11 @@ a {
   @media (max-width:800px) {
     width: 24rem;
   }
+
+  @media (max-width:400px) {
+    width: 18rem;
+  }
+
 }
 
 .medaillon {
@@ -332,7 +338,6 @@ a {
 
 .carousel-custom {
   max-width: 500px;
-  /*min-width: 350px;*/
   justify-content: center;
 }
 
