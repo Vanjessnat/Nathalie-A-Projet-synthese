@@ -14,47 +14,44 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/theme.css">
     <link rel="stylesheet" href="styles/components.css">
-    <link rel="icon" type="images/svg+xml" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
-<body class="mx-0 px-0">
+<body>
     <a class="screen-reader-text" href="#main-content">Aller au contenu principal</a>
-    <header class="mx-0 px-0 header-fixed">
+    <header class="mx-0 px-0 section-header">
         <!-- Navigation secondaire -->
-        <div class="topbar text-dark py-2">
-            <div class="container d-flex justify-content-end align-items-center gap-4">
-                <a href="tel:4501234567" class="text-dark text-decoration-none d-flex align-items-center">
-                    <i class="bi bi-telephone-fill me-1 fs-4"></i>
+        <div class="topbar py-0 pb-0 mb-0 text-light bg-dark">
+            <div class="container d-flex justify-content-end align-items-center gap-4 py-0">
+                <a href="tel:4501234567" class=" text-decoration-none d-flex align-items-center" aria-label="Téléphone">
+                    <i class="bi bi-telephone-fill  text-light fs-6 "></i>
                 </a>
-                <a href="https://www.facebook.com/carrosserieJacquesgenereux" target="_blank" class="text-dark fs-4">
-                    <i class="bi bi-facebook"></i>
+                <a href="https://www.facebook.com/carrosserieJacquesgenereux" target="_blank" class="text-dark fs-4"
+                    aria-label="Facebook">
+                    <i class="bi bi-facebook  text-light fs-6 "></i>
                 </a>
-                <a href="https://www.youtube.com/@2Street" target="_blank" class="text-dark fs-3">
-                    <i class="bi bi-youtube"></i>
+                <a href="https://www.youtube.com/@2Street" target="_blank" class="text-dark fs-3" aria-label="YouTube">
+                    <i class="bi bi-youtube text-light  fs-5 "></i>
                 </a>
             </div>
         </div>
-
         <!-- Navigation principale -->
         <nav class="navbar navbar-expand-lg border-body border-bg main-nav" data-bs-theme="fw-light">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center pe-3" href="index.html">
-                    <img src="images/logo.png" style="width: 150px;" alt="Les carrosseries Jacques Généreux inc."
+                    <img src="images/logo.png" alt="Les carrosseries Jacques Généreux inc."
                         class="d-inline-block align-text-center me-3">
                 </a>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-
                         <!-- Services avec sous-menu -->
                         <li class="nav-item dropdown">
-                            <a class=" nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="active nav-link dropdown-toggle" href="services.html" id="servicesDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
@@ -62,21 +59,18 @@
                                 <li><a class="dropdown-item" href="realisations.html">Réalisations</a></li>
                             </ul>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="apropos.html">À&nbsp;propos</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="active nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main id="main-content" >
+    <main class="container-fluid mx-0 px-0" id="main-content">
     <!--   Section contact  -->
 
     <section
@@ -97,59 +91,53 @@
     </main>
     <!-- Pied de page -->
 
-    <footer class="bg-section-footer py-5 mt-0">
+     <footer class="container-fluid section-footer mt-0 mb-0 pt-5 ">
         <div class="container">
             <div class="row gy-4 align-items-center">
                 <!-- Colonne 1 : Coordonnées -->
                 <div class="col-md-4 text-center text-md-start">
-                    <h3 class="text-md-start mb-2">Coordonnées</h3>
-                    <p class="mb-3 text-black"><i class="bi bi-geo-alt-fill me-1 fs-4"></i> 24, rue Hubert Joliette J6E
-                        6R5</p>
-                    <p class="mb-3 text-black"><i class="bi bi-telephone-fill me-1 fs-4"></i> <a href="tel:+14507566363"
-                            class="text-black text-decoration-none">450
+                    <h3 class="text-md-start mt-4 mb-4 mb-md-3">Coordonnées</h3>
+                    <p class="mb-3 fs-lg-5 fs-md-5 "><i
+                            class="bi bi-geo-alt-fill me-1 fs-4 fs-md-5"></i>24&nbsp;rue&nbsp;Hubert&nbsp;Joliette&nbsp;J6E&nbsp;6R5
+                    </p>
+                    <p class="mb-3 text-black"><i class="bi bi-telephone-fill me-1 fs-4"></i><a href="tel:+14507566363"
+                            class="" aria-label="14507566363">450
                             756-6363</a></p>
-                    <p class="mb-3 text-black"><i class="bi bi-envelope-at-fill me-1 fs-4"></i> <a
-                            href="mailto:carrosseriesjg@outlook.com"
-                            class="text-black text-decoration-none">carrosseriesjg@outlook.com</a></p>
+                    <p class="mb-3 fs-lg-5 fs-md-5 "><i class="bi bi-envelope-at-fill me-1 fs-4"></i><a
+                            href="mailto:carrosseriesjg@outlook.com" class=""
+                            aria-label="carrosseriesjg@outlook.com">carrosseriesjg@outlook.com</a></p>
                 </div>
-
                 <!-- Colonne 2 : Liens de navigation -->
                 <div class="col-md-4 text-center">
-                    <h3 class="mb-2">Navigation</h3>
+                    <h3 class="mb-4 mt-4 mb-md-5 mb-lg-3">Liens</h3>
                     <ul class="list-unstyled mb-2">
-                        <li class="pb-1"><a href="services.html" class="text-black text-decoration-none ">Services</a>
+                        <li class="pb-3 pb-md-2"><a href="services.html" class="">Services</a>
                         </li>
-                        <li class="pb-1"><a href="apropos.html"
-                                class="text-black text-decoration-none  pb-2">À&nbsp;propos</a></li>
-                        <li class="pb-1"><a href="contact.html" class="text-black text-decoration-none mb-2">Contact</a>
+                        <li class="pb-3 pb-md-2"><a href="apropos.html" class=" pb-2">À&nbsp;propos</a></li>
+                        <li class="pb-3 pb-md-2"><a href="contact.html" class="  mb-2">Contact</a>
                         </li>
-                        <li class="pb-1"><a href="realisations.html"
-                                class="text-black text-decoration-none mb-2">Réalisations</a></li>
-                        <li class="pb-1"><a href="contact.html" class="text-black text-decoration-none">Carrière</a>
+                        <li class="pb-3 pb-md-2"><a href="realisations.html" class="  mb-2">Réalisations</a></li>
+                        <li class="pb-3 pb-md-2"><a href="contact.html" class=" ">Carrière</a>
                         </li>
                     </ul>
                 </div>
                 <!-- Colonne 3 : Logo + texte -->
                 <div class="col-md-4 text-center text-md-end">
-                    <a href="index.html" class="text-dark fs-3"><img src="images/logo.png"
-                            alt="Les carrosseries Jacques Généreux inc." style="width: 150px;" class="mb-3"></a>
+                    <a href="index.html" class=" fs-3"><img src="images/logo.png"
+                            alt="Les carrosseries Jacques Généreux inc." class="mb-3"></a>
                     <p class="text-center text-md-end text-xl-end"> <a
-                            href="https://www.facebook.com/carrosserieJacquesgenereux" target="_blank"
-                            class="text-dark fs-4">
-                            <i class="bi bi-facebook me-1 fs-4 text-black px-4 px-md-5"></i></a>
-                        <a href="https://www.youtube.com/@2Street" target="_blank" class="text-dark fs-3">
-                            <i class="bi bi-youtube me-1 fs-4 text-black px-3 px-md-3"></i></a>
+                            href="https://www.facebook.com/carrosserieJacquesgenereux" target="_blank" class=" fs-4"
+                            aria-label="Facebook">
+                            <i class="bi bi-facebook me-1 fs-4  px-2 px-md-3"></i></a>
+                        <a href="https://www.youtube.com/@2Street" target="_blank" class=" fs-3" aria-label="YouTube">
+                            <i class="bi bi-youtube me-1 fs-4  px-3 px-md-5"></i></a>
                     </p>
                 </div>
             </div>
-
-            <!-- Ligne de séparation -->
-            <hr class="border-secondary my-4">
-
             <!-- Bas de page -->
-            <div class="text-center small text-black">
-                © 2025 Les carrosseries Jacques Généreux inc.
-            </div>
+        </div>
+        <div class="container-fluid text-center small text-light bg-dark py-2 mt-5">
+            © 2025 Les carrosseries Jacques Généreux&nbsp;inc.
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
