@@ -8,8 +8,14 @@
 
     --text-primary: #e7e9ed;
 
+    --bs-custom: #5584c7;
+    --bs-custom-rgb:rgb(85, 132, 199);
+
     --bs-success: #9ea9b8;
     --bs-success-rgb: rgb(158, 169, 184);
+
+    --bg-success: #9ea9b8;
+    --bg-success-rgb: rgb(158, 169, 184);
 
     --bs-secondary: #032242;
     --bs-secondary-rgb: rgb(3, 34, 66);
@@ -17,19 +23,21 @@
     --text-secondary-rgb: rgb(3, 34, 66);
     --bg-secondary: #032242;
     --bg-secondary-rgb: rgb(3, 34, 66);
-    
+
     --bs-dark: #032242;
-    --bs-dark-rgb: 3, 34, 66;
+    --bs-dark-rgb: 3, 34, 66; 
+
+    --bs-topbar-color: #de1e1b;
+    --bs-topbar-color-rgb: rgb(222, 30, 27);
+    --bs-topbar-hover-color: #de1e1b;
+    --bs-topbar-hover-color-rgb: rgb(222, 30, 27);
 
     --bs-navbar-color: #032242;
     --bs-navbar-color-rgb: rgb(3, 34, 66);
     --bs-navbar-hover-color: #de1e1b;
     --bs-navbar-hover-color-rgb: rgb(222, 30, 27);
     --bs-navbar-active-color: #de1e1b;
-    --bs-navbar-active-color-rgb: rgb(222, 30, 27);    
-
-    --bg-info: #0323427a;
-    --bg-info-rgb: rgb(3, 35, 66, 0.48);
+    --bs-navbar-active-color-rgb: rgb(222, 30, 27);
 
     --bs-heading-color: #032242;
 
