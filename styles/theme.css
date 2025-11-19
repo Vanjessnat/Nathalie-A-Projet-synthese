@@ -9,7 +9,7 @@
     --text-primary: #e7e9ed;
 
     --bs-custom: #5584c7;
-    --bs-custom-rgb:rgb(85, 132, 199);
+    --bs-custom-rgb: rgb(85, 132, 199);
 
     --bs-success: #9ea9b8;
     --bs-success-rgb: rgb(158, 169, 184);
@@ -25,7 +25,7 @@
     --bg-secondary-rgb: rgb(3, 34, 66);
 
     --bs-dark: #032242;
-    --bs-dark-rgb: 3, 34, 66; 
+    --bs-dark-rgb: 3, 34, 66;
 
     --bs-topbar-color: #de1e1b;
     --bs-topbar-color-rgb: rgb(222, 30, 27);

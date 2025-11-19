@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
 /* fonction afficher une alerte et changer de couleur  */
 
 let monBouton = document.getElementById("bouton-alerte");
-monBouton.addEventListener("mouseover", () => changerCouleurDuBouton(monBouton, "#a39b3dff"));
-monBouton.addEventListener("mouseout", () => changerCouleurDuBouton(monBouton, "#e0ebd5ff"));
+monBouton.addEventListener("mouseover", () => changerCouleurDuBouton(monBouton, "#fcaa13"));
+monBouton.addEventListener("mouseout", () => changerCouleurDuBouton(monBouton, "#040800ff"));
 monBouton.addEventListener("click", () => afficherUneAlerte());
 
 
@@ -61,7 +61,7 @@ function changerCouleurDuBouton(unBouton, couleur) {
   unBouton.setAttribute("style", "background-color:" + couleur);
 }
 
-function afficherUneAlerte() { alert("Appelez-nous sans plus tarder au 450 756-6363 ou présentez-vous au : 24 rue Hubert Joliette J6E 6R5 !"); }
+function afficherUneAlerte() { alert("Appellez-nous sans plus tarder au 450 756-6363                    Présentez-vous au : 24 rue Hubert Joliette J6E 6R5 !"); }
 
 
 
