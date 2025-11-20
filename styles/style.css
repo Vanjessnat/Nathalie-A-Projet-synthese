@@ -70,7 +70,7 @@ body {
 }
 
 
-/* Sections Hero  */
+/* Section Hero  */
 .hero {
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(231, 233, 237, 0)), url("../images/hero-cropped.jpg");
   background-size: auto, cover;
@@ -104,10 +104,10 @@ body {
 
   }
 }
- 
-/* Sections Entête et bas de page */
+
+/* Background Sections, Entête et bas de page */
 .section-header {
-  background: linear-gradient(to bottom, #032342d2, #E7E9ED);
+  background: linear-gradient(to bottom, #032342d2, var(--bg-primary));
 }
 
 .section-footer {
@@ -116,7 +116,7 @@ body {
   padding: 0;
 }
 
-.section-1 {
+.section-soumission {
   background: var(--bg-info);
   background-image: linear-gradient(to top, rgba(0, 2, 14, 0.411), rgba(10, 10, 10, 0.212)), url("../images/service-polir-vehicule-rouge.jpg");
   background-blend-mode: darken;
@@ -124,16 +124,16 @@ body {
   background-position: top, top;
 }
 
-.section-2 {
+.section-horaire {
   background: var(--bg-info);
-  background-image: linear-gradient(to top, rgba(0, 2, 14, 0.411), rgba(10, 10, 10, 0.212)),  url("../images/service-polissage.jpg");
+  background-image: linear-gradient(to top, rgba(0, 2, 14, 0.411), rgba(10, 10, 10, 0.212)), url("../images/service-polissage.jpg");
   background-blend-mode: darken;
   background-size: auto, cover;
   background-position: center, center
 }
 
-.section-3 {
-  background: linear-gradient(to top, #032342d2, #E7E9ED);
+.section-degradee {
+  background: linear-gradient(to top, var(--bg-secondary), var(--bg-primary));
 
   & .ref-logo {
     width: 100px;
@@ -194,6 +194,13 @@ a {
   }
 }
 
+.border-texte {
+  border: var(--text-info) 1px outset;
+  color: var(--text-info);
+  background: linear-gradient(to bottom, var(--bs-body-bg), var(--bg-warning-transparent));
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
+}
+
 /* Tableau Horaire */
 .horaire {
   border-collapse: separate;
@@ -203,7 +210,6 @@ a {
   background-color: var(--bg-info);
   text-align: center;
   max-width: 430px;
-
   margin: 20px auto;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 
@@ -442,15 +448,3 @@ a {
     transition-delay: 0.1s;
   }
 }
-
-.border-error { 
-    border: var(--text-error) 1px outset;
-    background-color: var(--text-primary);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
-    }
-
-.border-warning { 
-    border: var(--bs-header-bg) 1px outset;
-     background-color: var(--text-primary);
-     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
-    }
