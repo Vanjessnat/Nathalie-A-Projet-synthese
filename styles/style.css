@@ -338,12 +338,18 @@ a {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
 
+  &#googlemap {
+    border: var(--bs-header-bg) 1px solid;
+  }
+
   @media (max-width:800px) {
     width: 24rem;
+   margin-left:inherit;
   }
 
   @media (max-width:400px) {
     width: 20rem;
+    margin-left:inherit;
   }
 
 }
