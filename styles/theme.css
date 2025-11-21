@@ -1,21 +1,18 @@
 :root {
-    --bs-border-color: #032242;
+
     --btn-text-color: #ffffff;
     --bs-primary: #e7e9ed;
     --bs-primary-rgb: rgb(231, 233, 237);
     --bg-primary: #e7e9ed;
     --bs-body-bg: #e7e9ed;
-
-    --text-primary: #e7e9ed;
-
-    --bs-custom: #5584c7;
-    --bs-custom-rgb: rgb(85, 132, 199);
+    --bg-white: #ffffff;
+    --bg-success: #9ea9b8;
+    --bg-success-rgb: rgb(158, 169, 184);
 
     --bs-success: #9ea9b8;
     --bs-success-rgb: rgb(158, 169, 184);
+    --bs-border-color: #032242;
 
-    --bg-success: #9ea9b8;
-    --bg-success-rgb: rgb(158, 169, 184);
 
     --bs-secondary: #032242;
     --bs-secondary-rgb: rgb(3, 34, 66);
@@ -58,7 +55,7 @@
     --text-warning: #fcaa13;
     --bg-warning: #fcaa13;
     --bg-warning-rgb: rgb(252, 170, 19);
-    --bg-warning-transparent: #aa751393;
+    --bg-warning-transparent: #fcaa137e;
 
     --text-error: #de1e1b;
     --bs-border-color-error: #de1e1b;

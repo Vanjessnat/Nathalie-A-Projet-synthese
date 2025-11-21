@@ -195,10 +195,10 @@ a {
 }
 
 .border-texte {
-  border: var(--text-info) 1px outset;
+  border-top: var(--text-error) 1px dotted;
   color: var(--text-info);
-  background: linear-gradient(to bottom, var(--bs-body-bg), var(--bg-warning-transparent));
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
+  background-color: var(--bg-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
 }
 
 /* Tableau Horaire */
@@ -206,8 +206,8 @@ a {
   border-collapse: separate;
   border-spacing: 2px 4px;
   border: 1px solid var(--bs-header-bg);
-  border-radius: 10px;
-  background-color: var(--bg-info);
+  border-radius: 8px;
+  background-color: var(--bs-success);
   text-align: center;
   max-width: 400px;
   margin: 20px auto;
@@ -218,6 +218,7 @@ a {
     padding: 6px 12px;
     border: 1px solid var(--bs-header-bg);
     background-color: var(--bs-body-bg);
+    border-radius: 8px 8px 8px 8px;
     color: var(--text-info);
   }
 
@@ -344,12 +345,12 @@ a {
 
   @media (max-width:800px) {
     width: 24rem;
-   margin-left:inherit;
+    margin-left: inherit;
   }
 
   @media (max-width:400px) {
     width: 20rem;
-    margin-left:inherit;
+    margin-left: inherit;
   }
 
 }
