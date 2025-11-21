@@ -209,7 +209,7 @@ a {
   border-radius: 8px;
   background-color: var(--bs-success);
   text-align: center;
-  max-width: 380px;
+  max-width: 400px;
   margin: 20px auto;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 
@@ -228,7 +228,8 @@ a {
   }
 
   &#conges {
-    font-size: 14px ;
+    font-size: 14px;
+    max-width: 360px;
   }
 }
 
