@@ -72,32 +72,35 @@ body {
 
 /* Section Hero  */
 .hero {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(231, 233, 237, 0)), url("../images/hero-cropped.jpg");
-  background-size: auto, cover;
+  background-image: linear-gradient(to top, rgba(5, 5, 5, 0.644), rgba(0, 0, 0, 0.37)), url("../images/hero.png");
+   background-size: auto, cover;
   background-position: top, center;
-  min-height: 500px;
-  margin: 0;
-  padding: 0;
+  height: 550px;
+  padding: 20px;
+  margin: 60px 40px !important;
+  border-radius: 10px;
 
   & h1 {
-    color: var(--text-warning);
+    color: var(--text-primary);
     text-transform: var(--bs-body-bg);
-    background-color: #00020793;
-    margin-top: 100px;
+    margin-top: 10px;
     text-shadow: 0 0 10px var(--text-error), 0 0 20px var(--text-error);
 
   }
 
   @media (max-width:800px) {
-    background-image: linear-gradient(to top, rgba(5, 5, 5, 0.397), rgba(0, 0, 0, 0.548)), url("../images/hero-cropped.jpg");
+    background-image: linear-gradient(to top, rgba(5, 5, 5, 0.466), rgba(0, 0, 0, 0.863)), url("../images/hero.png");
     background-size: auto, cover;
     background-position: top, center;
-    min-height: 50% !important;
+    height:550px;
+    padding: 20px;
+    margin: 60px 40px !important;
+
 
     & h1 {
-      color: var(--text-warning);
+      color: var(--text-primary);
       background-color: inherit;
-      margin-top: 100px;
+      margin-top: 30px;
       text-shadow: 0 0 10px var(--text-error), 0 0 20px var(--text-info);
       transition: text-shadow 0.3s ease;
     }
@@ -194,7 +197,8 @@ a {
 }
 
 .border-texte {
-  border-top: var(--text-error) 1px dotted;
+  border-top: var(--text-error) 4px solid;
+  border-radius: 10px;
   color: var(--text-info);
   background-color: var(--bg-white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
