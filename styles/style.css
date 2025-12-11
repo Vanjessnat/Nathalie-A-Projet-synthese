@@ -72,8 +72,8 @@ body {
 
 /* Section Hero  */
 .hero {
-  background-image: linear-gradient(to top, rgba(5, 5, 5, 0.644), rgba(0, 0, 0, 0.37)), url("../images/hero.png");
-   background-size: auto, cover;
+  background-image: linear-gradient(to top, rgba(5, 5, 5, 0.171), rgba(0, 0, 0, 0.137)), url("../images/hero.png");
+  background-size: auto, cover;
   background-position: top, center;
   height: 550px;
   padding: 20px;
@@ -82,27 +82,43 @@ body {
 
   & h1 {
     color: var(--text-primary);
+
     text-transform: var(--bs-body-bg);
     margin-top: 10px;
     text-shadow: 0 0 10px var(--text-error), 0 0 20px var(--text-error);
 
   }
 
+  & p {
+    position: relative;
+    color: var(--text-primary);
+    text-shadow: 0 0 10px var(--text-info);
+    padding: 10px 15px;
+    display: inline-block;
+    z-index: 1;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 2, 14, 0.6);
+      border-radius: 10px;
+      filter: blur(10px);
+      z-index: -1;
+    }
+  }
+
   @media (max-width:800px) {
-    background-image: linear-gradient(to top, rgba(5, 5, 5, 0.466), rgba(0, 0, 0, 0.863)), url("../images/hero.png");
+    background-image: linear-gradient(to top, rgba(5, 5, 5, 0), rgba(0, 0, 0, 0.397)), url("../images/hero-cropped.png");
     background-size: auto, cover;
     background-position: top, center;
-    height:550px;
     padding: 10px;
     margin: 60px 20px !important;
 
 
     & h1 {
-      color: var(--text-primary);
-      background-color: inherit;
-      margin-top: 30px;
-      text-shadow: 0 0 10px var(--text-error), 0 0 20px var(--text-info);
-      transition: text-shadow 0.3s ease;
+      margin: 30px 0 30px 0;
     }
 
   }
@@ -153,7 +169,7 @@ h1 {
   padding-top: 70px;
 
   @media (max-width:800px) {
-    font-size: 35px;
+    font-size: 45px;
     line-height: 50px;
     padding-top: 50px;
   }
@@ -236,6 +252,12 @@ a {
   }
 }
 
+@media (min-width: 1200px) {
+    .section-resserree {
+        max-width: 1080px; 
+        margin: 0 auto;
+    }
+}
 
 /* Cartes pivotantes*/
 
